@@ -105,5 +105,5 @@ darkLighToggle.addEventListener('click', () => {
 let currentYear = document.querySelector('.current-year')
 
 let present = new Date()
-present.getFullYear()
-currentYear.innerHTML = `${present.getFullYear()}`
+let dynamicDate = present.getFullYear()
+currentYear.innerHTML = `${dynamicDate}`

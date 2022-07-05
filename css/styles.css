@@ -1,6 +1,8 @@
 /* ===== VARIABLES ========================= */
 :root {
-  --main-color: #647bff;
+  --hue: 231;
+  --main-color: hsl(var(--hue), 100%, 70%);
+  --secondary-color: hsl(var(--hue), 100%, 65%);
   --body-color: #090a1a;
   --container-color: #171b3c;
   --heading-color: #222231;
@@ -306,7 +308,7 @@ header {
 }
 
 .btn:hover {
-  background-color: #546eff;
+  background-color: var(--secondary-color);
 }
 
 .about-text p {
@@ -545,7 +547,7 @@ header {
 }
 
 .contact-form .send-btn:hover {
-  background-color: #546eff;
+  background-color: var(--secondary-color);
 }
 
 /* ===== #CONTACT FORM ========================= */
@@ -857,6 +859,14 @@ header {
   border: 1px solid rgba(128, 128, 128, 0.2);
 }
 
+.light .swiper-pagination-bullet {
+  background-color: rgba(128, 128, 128, 0.3) !important;
+}
+
+.light .swiper-pagination-bullet-active {
+  background-color: var(--main-color) !important;
+}
+
 .light .contact-form input,
 .light .contact-form textarea {
   color: var(--body-color);
@@ -871,7 +881,7 @@ header {
 }
 
 .light .contact-form .send-btn:hover {
-  background-color: #546eff;
+  background-color: var(--secondary-color);
 }
 
 .light .footer-links a {
@@ -891,5 +901,5 @@ header {
 }
 
 .light .scroll-top i:hover {
-  background-color: #546eff;
+  background-color: var(--secondary-color);
 }
