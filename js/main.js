@@ -99,5 +99,11 @@ const darkLighToggle = document.querySelector('.light-dark-mode')
 
 darkLighToggle.addEventListener('click', () => {
   bodyLight.classList.toggle('light')
-  
 })
+
+// Current Year
+let currentYear = document.querySelector('.current-year')
+
+let present = new Date()
+present.getFullYear()
+currentYear.innerHTML = `${present.getFullYear()}`
