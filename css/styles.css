@@ -35,26 +35,30 @@ body {
   transition: all 0.4s ease;
 }
 
-img {
-  width: 100%;
-}
-
 section {
   padding: 3rem 0 2rem;
-}
-
-a {
-  text-decoration: none;
-}
-
-li {
-  list-style: none;
 }
 
 .container {
   max-width: 960px;
   margin: auto;
   width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+textarea {
+  resize: none;
 }
 
 /* ===== HEADER ========================= */
