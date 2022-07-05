@@ -30,6 +30,7 @@ html::-webkit-scrollbar-thumb {
 body {
   color: var(--bg-color);
   background-color: var(--body-color);
+  transition: all 0.4s ease;
 }
 
 img {
@@ -97,10 +98,26 @@ header {
 .nav-link:hover {
   color: var(--main-color);
   background-color: var(--container-color);
-  transition: 0.2s all linear;
+  transition: 0.3s all linear;
 }
 
-/* ===== MENU ICON ========================= */
+/* ===== #DARK/LIGHT BUTTON ========================= */
+.nav #theme-button {
+  font-size: 1.5rem;
+  color: var(--bg-color);
+  cursor: pointer;
+  transition: 0.3s all linear;
+}
+
+.nav #theme-button:hover {
+  color: var(--main-color);
+}
+
+.nav .bx.bx-moon {
+  display: none;
+}
+
+/* ===== #MENU ICON ========================= */
 .menu-icon {
   display: none;
   flex-direction: column;
@@ -542,7 +559,7 @@ header {
 }
 
 .footer p {
-font-size: 0.9REM;
+  font-size: 0.9rem;
 }
 
 .footer-links {
@@ -567,6 +584,7 @@ font-size: 0.9REM;
   position: fixed;
   bottom: -100%;
   right: 1.5rem;
+  z-index: 1000;
 }
 
 .scroll-top .bx {
@@ -662,6 +680,10 @@ font-size: 0.9REM;
     transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
   }
 
+  .light .navbar {
+    background-color: var(--bg-color);
+  }
+
   .open-menu {
     right: 0;
     transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -671,9 +693,12 @@ font-size: 0.9REM;
     display: block;
     margin: 1rem 0;
   }
-}  
+}
 
 @media (max-width: 635px) {
+  .home {
+    padding: 0;
+  }
   .about-content {
     grid-template-columns: 1fr;
   }
@@ -702,6 +727,7 @@ font-size: 0.9REM;
 @media (max-width: 450px) {
   .home {
     min-height: 485px;
+    padding: 0;
     padding-top: 5rem;
   }
 
@@ -761,9 +787,109 @@ font-size: 0.9REM;
   }
 }
 
+/* ===== #DARK/LIGHT MODE ========================= */
+.light {
+  color: var(--body-color);
+  background-color: var(--bg-color);
+}
 
+.light .heading {
+  color: var(--main-color);
+}
 
+.light .bx.bx-sun {
+  display: none;
+}
 
+.light .bx.bx-moon {
+  color: var(--box-color) !important;
+  display: block;
+  transition: 0.3s all;
+}
 
+.light .bx.bx-moon:hover {
+  color: var(--main-color) !important;
+}
 
+.light .nav-link {
+  color: var(--body-color);
+  transition: 0.3s all linear;
+}
 
+.light .nav-link:hover {
+  color: var(--bg-color);
+  background-color: var(--main-color);
+}
+
+.light .header-active {
+  background-color: var(--bg-color);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.light .home-img {
+  border-color: var(--body-color);
+}
+
+.light .services-box {
+  background-color: var(--bg-color);
+  border: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.light .services-box:hover {
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+}
+
+.light .services-box .bx {
+  border-color: var(--body-color);
+}
+
+.light .portfolio-overlay h2 {
+  color: var(--bg-color);
+}
+
+.light .project-box h2,
+.light .project-box span {
+  color: var(--bod-color);
+}
+
+.light .project-box {
+  background-color: var(--bg-color);
+  border: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.light .contact-form input,
+.light .contact-form textarea {
+  color: var(--body-color);
+  background-color: var(--bg-color);
+  border: 1px solid var(--body-color);
+}
+
+.light .contact-form .send-btn {
+  color: var(--bg-color);
+  background-color: var(--main-color);
+  border: none;
+}
+
+.light .contact-form .send-btn:hover {
+  background-color: #546eff;
+}
+
+.light .footer-links a {
+  color: var(--body-color);
+}
+
+.light .footer-links a:hover {
+  color: var(--main-color);
+}
+
+.light .menu-icon div {
+  background-color: var(--body-color);
+}
+
+.light .scroll-top i {
+  background-color: var(--main-color);
+}
+
+.light .scroll-top i:hover {
+  background-color: #546eff;
+}

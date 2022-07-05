@@ -91,3 +91,13 @@ window.addEventListener('scroll', () => {
     scrollTop.classList.remove('scroll-active')
   }
 })
+
+// Dark/Light Mode
+
+const bodyLight = document.querySelector('body')
+const darkLighToggle = document.querySelector('.light-dark-mode')
+
+darkLighToggle.addEventListener('click', () => {
+  bodyLight.classList.toggle('light')
+  
+})
