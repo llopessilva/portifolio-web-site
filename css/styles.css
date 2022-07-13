@@ -585,6 +585,17 @@ header {
   color: var(--main-color);
 }
 
+footer p a {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--bg-color);
+  transition: 0.3s all linear;
+}
+
+footer p a:hover {
+  color: var(--main-color);
+}
+
 /* ===== #SCROLL TOP ========================= */
 .scroll-top {
   position: fixed;
@@ -893,6 +904,14 @@ header {
 }
 
 .light .footer-links a:hover {
+  color: var(--main-color);
+}
+
+.light footer p a {
+  color: var(--body-color);
+}
+
+.light footer p a:hover {
   color: var(--main-color);
 }
 
