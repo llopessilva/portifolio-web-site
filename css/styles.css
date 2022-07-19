@@ -8,6 +8,8 @@
   --heading-color: #222231;
   --box-color: #0d0f26;
   --bg-color: #fff;
+
+  --transition: all 0.4s ease; ;
 }
 
 /* ===== GLOBAL ========================= */
